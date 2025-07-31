@@ -49,7 +49,7 @@ results = []
 
 for structure in sample_structures:
     mofchecker = MOFChecker.from_cif(structure)
-    results.append(mofchecker.get_mof_descriptors())
+    results.append(mofchecker.checks())
 ```
 Checking and cleaning cases can be found in tests folder.
 The positive charge of metal site can be obtained from Oximachine (https://github.com/kjappelbaum/oximachinerunner)
